@@ -1,20 +1,23 @@
-html, body {
-  margin: 1vh;
-  height: 95vh;
+#canvas-1 {
+  display: flex;
 }
 
 @media screen and (min-aspect-ratio: 1/1) {
+  html, body {
+    margin: 1vh;
+    height: 98vh;
+  }
   #canvas-1 {
     height: 100%;
   }
 }
 
 @media screen and (max-aspect-ratio: 1/1) {
+  html, body {
+    margin: 1vw;
+    height: 98vw;
+  }
   #canvas-1 {
     width: 100%;
   }
-}
-
-#canvas-1 {
-  display: flex;
 }
