@@ -1,0 +1,20 @@
+html, body {
+  margin: 1vh;
+  height: 95vh;
+}
+
+@media screen and (min-aspect-ratio: 1/1) {
+  #canvas-1 {
+    height: 100%;
+  }
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+  #canvas-1 {
+    width: 100%;
+  }
+}
+
+#canvas-1 {
+  display: flex;
+}
