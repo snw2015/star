@@ -299,7 +299,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
     sky.start();
     Claire.skies[canvas.id] = sky;
   }
-  if (this.onStart) this.onStart();
+  if (Claire.onStart) Claire.onStart();
 });
 
 window.Claire = Claire;

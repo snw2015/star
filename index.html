@@ -11,11 +11,15 @@
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
     <script src="js/claire.js"></script>
     <script>
-      Claire(() => Claire("canvas-1").resize());
+      Claire(() => {
+        $("#canvas-1").attr("width", screen.width)
+        $("#canvas-1").attr("height", screen.height);
+        Claire("canvas-1").resize();
+      });
     </script>
   </head>
   <body>
-    <canvas id="canvas-1" class="claire-starry" width="1200" height="600"></canvas>
+    <canvas id="canvas-1" class="claire-starry"></canvas>
     <!-- <canvas id="canvas-2" class="claire-starry" width="500" height="500"></canvas> -->
   </body>
 </html>
