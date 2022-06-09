@@ -6,9 +6,13 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
+    <script src="js/claire.js"></script>
+    <script>
+      Claire(() => Claire("canvas-1").resize());
+    </script>
   </head>
   <body>
-    <canvas id="canvas-1" width="500" height="500"></canvas>
+    <canvas id="canvas-1" class="claire-starry" width="1200" height="600"></canvas>
+    <!-- <canvas id="canvas-2" class="claire-starry" width="500" height="500"></canvas> -->
   </body>
 </html>
